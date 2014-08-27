@@ -1,0 +1,47 @@
+
+.card-holder {
+  margin-top: 2em;
+  border: 1px solid #97BDDB;
+  border-radius: 1em;
+  position: fixed;
+  overflow: visible;
+  z-index: 10000;
+  background: #fff;
+}
+
+.card-wrapper {
+  border-bottom: 1px solid #97BDDB;;
+}
+.card-wrapper:hover {
+  background: #97BDDB;
+}
+.card {
+  position: relative;
+  padding-left: 1em;
+  width: 2.6em;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.card:hover {
+  width: 10em;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .title {
+  margin-left: 0.4em;
+  white-space: nowrap;
+}
+
+.card:hover {
+  display: block;
+}
+
+.card-content {
+  display: block;
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
