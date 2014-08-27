@@ -6,6 +6,7 @@ angular.module('ng-demo').directive('appNav', function() {
     templateUrl: 'views/container/navleft.html',
     controller: function ($scope) {
 	  var vm = $scope.vm = {};
+	  var vn = $scope.vm = {};
 	},
 
     controllerAs: 'navleft'
