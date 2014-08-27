@@ -22,7 +22,7 @@
   transition: all 0.3s ease-in-out 0.1s;
 }
 
-.card:hover {
+.card_in {
   width: 10em;
   transition: all 0.3s ease-in-out;
 }
