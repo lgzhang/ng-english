@@ -1,0 +1,16 @@
+<div ng-controller="listenExercise">
+          <div id="top">
+            <button id="submit" type="button" class="btn btn-success btn-sm album_play ">提交作答</button>
+            <div id="audiobar"></div>
+          </div>
+          <div id="exercise">
+            <li ng-repeat="exercise in exerciseList" class="list-group-item">
+            <div class="question"><h3>{{exercise.question}}</h3></div>
+              <div class="choice" ng-repeat="choice in exercise.choicelist">
+                <div>
+                  <label><input type="radio" name="{{exercise.id}}"/>{{map[$index]}}</label><div>{{choice}} </div>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
