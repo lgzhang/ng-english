@@ -1,4 +1,4 @@
 (function(){
  'use strict';
-  angular.module('ng-demo', []);
+  angular.module('ng-demo', ['ui.router']);
 })();
