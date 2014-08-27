@@ -24,6 +24,7 @@ body{font-size: 14px; font-family: "Microsoft Yahei"}
 ::-webkit-scrollbar-corner {  
   background: transparent;  
 }  
+.borderRadius{border-radius:10px;}
 .row { margin-left: -15px;margin-right: -15px;}
 .row:after, .row:before {content: " ";display: table;}
 .row:after {clear: both;}
@@ -40,18 +41,18 @@ body{font-size: 14px; font-family: "Microsoft Yahei"}
 .grey999{ color: #999;}
 .grey666{ color: #666;}
 .headline{float: right; }
-.Typesetting_0{clear: both; height: 80px}
+.ListenAndWrite{clear: both; height: 80px}
 .Typesetting_1{  text-align: right;margin-top: 12px; margin-top: 52px}
-.Typesetting_2{ text-align: right; font-size: 15px; overflow: hidden; height:30px}
+.PlayCount{ text-align: right; font-size: 15px; overflow: hidden; height:30px}
 .green_20{ font-size: 20px; color: #009900}
-.Typesetting_3{padding: 6px 12px; font-size: 20px;}
-.Typesetting_4,.Typesetting_5{width:100%;padding:15px;border-radius:10px;font-size: 18px; font-family: "Arial"; overflow-x:hidden;overflow-y: auto;}
-.Typesetting_4{ border: 1px solid #92B4CF;  background: #CDE8F5; color: #333333;height:100px; }
-.Typesetting_5{ border: 1px solid #AEB0B3;  background: #F5F8FA; color: #339900; margin-top: 10px;height:300px;}
-.Typesetting_6{border: 1px solid #ccc; background: #FDF7DB; height: 410px; overflow-x:hidden; overflow-y: auto;}
+.Typesetbtn_2{padding: 6px 12px; font-size: 20px;}
+.listenEnglish,.writeEnglish{width:100%;padding:15px;border-radius:10px;font-size: 18px; font-family: "Arial"; overflow-x:hidden;overflow-y: auto;}
+.listenEnglish{ border: 1px solid #92B4CF;  background: #CDE8F5; color: #333333;height:100px; }
+.writeEnglish{ border: 1px solid #AEB0B3;  background: #F5F8FA; color: #339900; margin-top: 10px;height:300px;}
+.accuracy{border: 1px solid #ccc; background: #FDF7DB; height: 410px; overflow-x:hidden; overflow-y: auto;}
 @media (min-width: 768px){
 .headline{margin-top: 40px}
-.Typesetting_2{height: 80px;}
+.PlayCount{height: 80px;}
 }
 @media (max-width:430px){
   .Typesetting_1{ margin-top:12px}
@@ -59,4 +60,8 @@ body{font-size: 14px; font-family: "Microsoft Yahei"}
 .panel-body{padding: 6px;}
 .panel-body .table tbody tr:hover{ background: #FEFDF5}
 .panel-body .table tbody tr td{ border-bottom: 1px  dashed #92B4CF; border-top: none;}
-.panel-body .table tbody tr:last-child td{ border-bottom:none};
+.panel-body .table tbody tr:last-child td{ border-bottom:none}
+.Typesetbtn1{padding:3px 12px; font-size: 18px;}
+
+.dictation_score{ border: 1px solid #98BEDB; padding: 10px}
+
