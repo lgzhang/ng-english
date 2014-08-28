@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../css/E_listen.css">
+  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../../bower_components/angular/angular.js"></script>
+  <script src="js/classmateScoreController_E.js"></script>
+  </head>
+<body>
+<div  class="container">
+    <section>
+        <div class="row" ng-app="ListenAndWirteModule"   ng-controller="ListenAndWirteController">
+            <div class="col-sm-8" >
+                 <div class="dictation_score borderRadius"><!-- 听写分数 -->
+                     <div class="Class_highest_scor">
+                         <span class="bigOrange">96</span> <span class="color333_30">分</span>班级最高分：98
+                      </div>
+                      <div class="DictationDetails">
+                          <div class="col-lg-6 col-xsm-6 padding-left-none">
+                               <span class="textHeader">听写详情</span> 
+                          </div>
+                          <div class="col-lg-6 col-xsm-6 padding-left-none">
+                               <div class="Identification">
+                               <span class="correctlogo"></span>正确
+                               <span class="Wronglogo"></span>写错
+                               <span class="misslogo"></span>漏写
+                               <span class="glyphicon glyphicon-minus glyphicon-minus-add"></span>多写
+                               </div>
+                          </div>
+                          <ul class="DictationSentence">
+                             <li>oh jhon,you should”t <span class="WrongColor">d</span>o thate</li>
+                             <li>Don’t  <span class="missColor">li</span>tter</li>
+                             <li>what  <span class="muchColor">shou</span>ld  I  do  with  it?</li>
+                          </ul>
+                      </div>
+                      <div class="HistoryGrading">
+                           <span class="textHeader">历史成绩</span>
+                          <table class="table">
+                              <tbody>
+                                  <tr ng-repeat="MyHistoryGrad in MyHistoryGradingDetail">
+                                      <td>{{MyHistoryGrad.score}}分</td>
+                                      <td class="HGradtimer">{{MyHistoryGrad.time}}</td>
+                                      <td class="HGradDetail"><a href="#">详情</a></td>
+                                  </tr>
+                                  
+                              </tbody>
+                          </table>
+                       </div>
+                 </div>  
+            </div>
+            <div class="col-sm-4">
+                <div  class="TryAgain"><button class="btn btn-success btn-lg Typesetbtn1" type="button">再试一次</button></div>
+                <div class="classmate_score borderRadius"><!-- 同学分数 -->
+                    <div class="classmate_score_table_header"><span class="textHeader">你的同学</span> <span  ng-click="predicate= '-score';reverse=!reverse" class="Sort">点击进行成绩排序</span></div>
+                    
+                    <div class="classmate_score_table panel-body">
+                               <table class="table">
+                                    <tbody>
+                                        <tr ng-repeat="ScoreDetail in classmateScoreDetail | filter:q | orderBy:predicate:reverse">
+                                            <td class="classmateName">{{ScoreDetail.name}}</td>
+                                            <td class="text-right">{{ScoreDetail.score}}<span class="fen">分</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                      
+                    </div>
+                     <div class="search1"><input type="search" class="form-control" ng-model="q" placeholder="搜-搜..." /></div>
+                </div>
+            </div>
+       </div>
+    </section>
+</div>
+</body>
