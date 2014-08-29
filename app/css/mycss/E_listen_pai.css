@@ -2,7 +2,7 @@ ul,li{ list-style:none; margin:0; padding:0}
 .padding-left-none{ padding-left:0}
 .padding-right-none{ padding-right:0}
 /**{transition: width 2s};*/
-/*body{font-size: 14px; font-family: "Microsoft Yahei"; min-width:260px}*/
+body{font-size: 14px; font-family: "Microsoft Yahei"; min-width:260px}
 ::-webkit-scrollbar {  
   width: 14px;  
   height: 14px;  
@@ -66,11 +66,11 @@ ul,li{ list-style:none; margin:0; padding:0}
 .panel-body .table tbody tr:last-child td{ border-bottom:none}
 .Typesetbtn1{padding:3px 12px; font-size: 18px;}
 
-.dictation_score{ border: 1px solid #98BEDB; padding: 10px; overflow:hidden; margin-top:4px;}
+.dictation_score{ border: 1px solid #98BEDB; padding: 10px; overflow:hidden; margin-top:4px; height:542px;  overflow-x:hidden; overflow-y:auto}
 .bigOrange{ font-size: 35px; color: #FF3300;}
 .Class_highest_scor{ border-bottom: 1px dashed #98BEDB; font-size: 16px; color: #666;padding-bottom: 14px}
 .color333_30{ color: #333; font-size: 30px; margin-right: 10px;}
-.Identification{white-space:nowrap}
+.Identification{ float:right; white-space:nowrap}
 .correctlogo,.Wronglogo,.misslogo,.muchlogo{ width:10px; height:10px; display:inline-block; margin-right:3px}
 .correctlogo{background:#009900; }
 .Wronglogo{background:#FF3300; margin-left:10px}
@@ -83,38 +83,22 @@ ul,li{ list-style:none; margin:0; padding:0}
     font-style: normal;
     font-weight: 200;}
 .textHeader{ color:#333; font-size:16px; font-family:"Microsoft Yahei"; font-weight:normal}
-.DictationDetails{border-bottom: 1px dashed #98BEDB; padding-top:15px; padding-bottom:15px;height:154px;  overflow-x:hidden; overflow-y:auto}
-.DetailStyle{ background:#F4F4F4;}
+.DictationDetails{border-bottom: 1px dashed #98BEDB; overflow:hidden; padding-top:15px; padding-bottom:15px}
 .DictationSentence{ list-style:none; clear:both; padding:10px 0 }
 .DictationSentence li{ font-size:18px; color:#009900; font-family:"Arial"}
-.HistoryGrading{ padding-top:8px; height:405px;  overflow-x:hidden; overflow-y:auto;}
-.HistoryGrading .table{ margin-bottom:4px}
+.HistoryGrading{ padding-top:8px;}
 .HistoryGrading .table td{ border:0}
 .HistoryGrading .HGradtimer{ color:#747474; font-size:12px;}
-.HistoryGrading .HGradDetail{ text-align:right; color:#747474; cursor:pointer}
-.HGradDetail a{ color:#707070}
+.HistoryGrading .HGradDetail{ text-align:right; color:#747474}
 .classmate_score{ border:1px solid #98bedb;position:relative}
-.TryAgain{ margin-bottom:10px; margin-top:4px}
-.classmate_score_table{ padding:10px; padding-bottom:30px; height:566px; overflow-x:hidden; overflow-y:auto; }
+.TryAgain{ text-align:right; margin-bottom:10px; margin-top:4px}
+.classmate_score_table{ padding:10px;margin-bottom:30px; height:432px; overflow-x:hidden; overflow-y:auto; }
 .classmate_score_table_header{border-top-left-radius:10px;
 border-top-right-radius:10px; background:#E1F4FB; height:36px; line-height:36px; padding-left:10px; border-bottom:1px solid #98BEDB}
 .classmateName{ color:#666;}
 .classmate_score_table .fen{ color:#999; font-size:12px;}
 @media (max-width: 768px){
-.classmate_score_table{ height:auto; max-height:566px}
+.classmate_score_table{ height:auto; max-height:432px}
 }
 .Sort{ cursor:pointer; color:#36F; font-size:12px; float:right; display:inline; margin-right:10px}
 .search1{ position:absolute; bottom:10px; width:90%;left:50%; margin-left:-45%}
-.wordErrorUl{ overflow:hidden; font-size:16px; font-family:Arial; padding-left:10px; padding-top:10px; color:#2e2e2e; margin-right:-60px}
-.wordErrorUl li{ width:210px; height:30px; float:left; line-height:30px; overflow:hidden}
- .errorWord{ width:130px; font-size:14px; color:#333; float:left; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
- .packUp{ cursor:pointer; width:27px; height:21px; background:url(../images/shouUp.png) no-repeat; border:none}
-.tooltip-inner { background:#FFFBE7; border:1px solid #D7C091; color:#333; font-size:12px;}
-.tooltip.top .tooltip-arrow { border-top-color: #D7C091;}
-.tooltip.top-left .tooltip-arrow {border-top-color: #D7C091;}
-.tooltip.top-right .tooltip-arrow {border-top-color: #D7C091;}
-.tooltip.right .tooltip-arrow {border-right-color: #D7C091;}
-.tooltip.left .tooltip-arrow {border-left-color: #D7C091;}
-.tooltip.bottom .tooltip-arrow {border-bottom-color: #D7C091;}
-.tooltip.bottom-left .tooltip-arrow {border-bottom-color: #D7C091;}
-.tooltip.bottom-right .tooltip-arrow { border-bottom-color: #D7C091;}

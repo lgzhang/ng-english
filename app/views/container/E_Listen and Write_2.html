@@ -7,20 +7,20 @@
   <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
   <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="../../bower_components/angular/angular.js"></script>
-  <script src="js/classmateScoreController_E.js"></script>
+  <script src="../../js/controllers/classmateScoreController_E.js"></script>
   <script>$(function(){$("[data-toggle=tooltip]").tooltip();})</script>
   </head>
 <body>
 <div  class="container">
     <section>
-        <div class="row" ng-app="ListenAndWirteModule"   ng-controller="ListenAndWirteController">
+        <div class="row" ng-app="ListenAndWirteModule">
             <div class="col-sm-8" >
                  <div class="dictation_score borderRadius"><!-- 听写分数 -->
                      <div class="Class_highest_scor">
                          <span class="bigOrange"  data-toggle="tooltip" data-original-title="首次成绩和最高成绩的平均值" data-placement="right" title="首次成绩和最高成绩的平均值">96</span> <span class="color333_30">分</span>班级最高分：98
                       </div>
                       
-                      <div class="DictationDetails">
+                      <div class="DictationDetails" ng-controller="wordIncorrectnessController">
                           <div class="padding-left-none">
                                <span class="textHeader">常错试题/错误率</span>
                                <ul class="wordErrorUl">
@@ -28,7 +28,7 @@
                                </ul> 
                           </div>
                       </div>
-                      <div class="HistoryGrading">
+                      <div class="HistoryGrading" ng-controller="MyHistoryGradingController">
                            <span class="textHeader">历史成绩</span>
                           <table class="table" ng-repeat="MyHistoryGrad in MyHistoryGradingDetail" ng-controller="toggleDetailController">
                                   <tr>
@@ -57,7 +57,7 @@
                        </div>
                  </div>  
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4"    ng-controller="classmateScoreController">
                 <div  class="TryAgain"><button class="btn btn-success btn-lg Typesetbtn1" type="button">再试一次</button></div>
                 <div class="classmate_score borderRadius"><!-- 同学分数 -->
                     <div class="classmate_score_table_header"><span class="textHeader">你的同学</span></div>
